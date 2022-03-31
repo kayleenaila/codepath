@@ -34,7 +34,7 @@ Dionaea creates a honeypot through scripting that acts as a decoy website which 
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
-MHN-Admin uses MongoDB which is a NoSQL database so data can be stored in a non-relational format. The '''mongoexport''' command we use makes it so that we can get the information in this MongoDB instance in a JSON format. The exported JSON file records the ID of the attack, the protocol used, the hpfeed_id, a timestamp holding date and time of day, a source IP address and port, a destination port, an identifier and which honeypot the attack was executed on.
+MHN-Admin uses MongoDB which is a NoSQL database so data can be stored in a non-relational format. The ```mongoexport``` command we use makes it so that we can get the information in this MongoDB instance in a JSON format. The exported JSON file records the ID of the attack, the protocol used, the hpfeed_id, a timestamp holding date and time of day, a source IP address and port, a destination port, an identifier and which honeypot the attack was executed on.
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
