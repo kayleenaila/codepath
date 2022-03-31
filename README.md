@@ -9,7 +9,7 @@
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 MHN-Admin was deployed using GCP, creating VM instances through a new project on that cloud service. I deployed it using the commands provided in the assignment documentation. The code snippet used can be found below. The honeypot-1 VM instance was created in a very similar matter with a different name and a firewall rule added.
 
-'''
+```
 gcloud compute instances create "mhn-admin" \
     --machine-type "n1-standard-1" \
     --subnet "default" \
@@ -20,7 +20,7 @@ gcloud compute instances create "mhn-admin" \
     --boot-disk-size "10" \
     --boot-disk-type "pd-standard" \
     --boot-disk-device-name "mhn-admin"
-'''
+```
 
 <img src="mhn-admin.gif">
 
