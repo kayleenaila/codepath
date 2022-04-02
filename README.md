@@ -22,14 +22,14 @@ gcloud compute instances create "mhn-admin" \
     --boot-disk-device-name "mhn-admin"
 ```
 
-<img src="mhn-admin.gif">
+![mhn-admin](https://user-images.githubusercontent.com/29714687/161392421-594b5777-89bc-4695-9fc3-969d62a61b92.gif)
 
 ### Dionaea Honeypot Deployment (Required)
 
 **Summary:** Briefly in your own words, what does dionaea do?
 Dionaea creates a honeypot through scripting that acts as a decoy website which attackers will attempt to access. The whole point of this is to gather information about what the attack was, when it happened and how it was attempted. 
 
-<img src="dionaea-honeypot.gif">
+![honeypot](https://user-images.githubusercontent.com/29714687/161392438-b036ad3b-d756-4056-971c-f83c3c6ddee5.gif)
 
 ### Database Backup (Required) 
 
@@ -41,3 +41,6 @@ MHN-Admin uses MongoDB which is a NoSQL database so data can be stored in a non-
 ## Notes
 
 A challenge I encountered when I first attempted this is that I tried to do everything by hand using the GCP UI, but that proved to overcomplicate the work that had to be done. I initially executed the firewalls incorrectly and ended up with a honeypot which was not functional because the port access was incorrect. Upon redoing the assignment, I was able to get the desired results where attackers are trying to exploit my honeypot.
+
+## nmap Attack proof
+<img width="295" alt="nmap" src="https://user-images.githubusercontent.com/29714687/161392445-63cd8bbb-8203-4e35-938b-695703d192c9.png">
